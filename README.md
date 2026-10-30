@@ -44,7 +44,7 @@ Course certificates and professional learning credentials are available in my po
 
 ## Live Portfolio
 
-[Visit My Portfolio](https://mudasir-iqbal-portfolio.netlify.app/)
+[Visit My Portfolio](https://mudasir-portfolio-six.vercel.app/)
 
 ## Connect With Me
 

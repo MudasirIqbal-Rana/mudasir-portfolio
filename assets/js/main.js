@@ -72,8 +72,7 @@
     ['.edu-item',                      '',           1],
     ['.cert',                          '',           1],
     ['.contact-list li',               'from-left',  1],
-    ['.contact-form',                  'from-right', 0],
-    ['.site-footer .wrap',             '',           0]
+    ['.contact-form',                  'from-right', 0]
   ];
 
   const items = [];
@@ -104,8 +103,16 @@
         el.style.removeProperty('--d');
       }, delay + 1000);
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   items.forEach(el => reveal.observe(el));
+
+  // safety net: if anything is still hidden when the user reaches the page bottom, show it
+  addEventListener('scroll', () => {
+    const h = document.documentElement;
+    if (h.scrollHeight - h.scrollTop - h.clientHeight < 4) {
+      $$('.reveal:not(.in)').forEach(el => el.classList.add('in'));
+    }
+  }, { passive: true });
 
   /* ---------- Contact form: opens the visitor's email app ---------- */
   const form = $('#contact-form');
