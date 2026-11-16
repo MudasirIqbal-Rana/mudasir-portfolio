@@ -49,7 +49,7 @@ Course certificates and professional learning credentials are available in my po
 ## Connect With Me
 
 - **LinkedIn:** [Mudasir Iqbal](https://www.linkedin.com/in/mudasiriqbaltech/)
-- **Portfolio:** https://mudasir-iqbal-portfolio.netlify.app/
+- **Portfolio:** https://mudasir-portfolio-six.vercel.app/
 
 ---
 
