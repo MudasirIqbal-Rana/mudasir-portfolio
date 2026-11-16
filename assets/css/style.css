@@ -244,7 +244,7 @@ p { max-width: 66ch; margin-bottom: 14px; }
 .project h3 { font: 600 1.7rem/1.2 var(--serif); margin: 8px 0 12px; }
 
 .sub-h { font: 600 1.4rem var(--serif); margin: 8px 0 22px; }
-.more-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.more-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .mini-card {
   display: flex; flex-direction: column; align-items: flex-start;
   padding: 26px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
@@ -474,3 +474,4 @@ a.c-value:hover { color: var(--accent); }
   visibility: visible;
   opacity: 1;
 }
+@media (max-width: 700px) { .more-grid { grid-template-columns: 1fr; } }
